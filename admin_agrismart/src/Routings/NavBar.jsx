@@ -2,34 +2,33 @@ import React, { useEffect } from 'react'
 import "../CSS/NavBar.css"
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import Weather from '../Wheather/Wheather';
-
-// import {auth} from '../Firebase/config';  
-// import {signOut} from "firebase/auth";
+import Weather from '../Wheather/Wheather'
+import {auth} from '../Firebase/config';  
+import {signOut} from "firebase/auth";
 
 const NavBar = () => {
 
   const [isMobile, setIsMobile] = useState(false);
   const [sign, setSign] = useState("signup");
   const [currUser,setCurrUser]=useState(null);
-
   
-  // useEffect(()=>{
-  //     const unsubscribe = auth.onAuthStateChanged(user => {
-  //       setCurrUser(user.displayName);
-  //     });
-  //     return()=>unsubscribe();
-  // },[]);
+  
+  useEffect(()=>{
+      const unsubscribe = auth.onAuthStateChanged(user => {
+        setCurrUser(user.displayName);
+      });
+      return()=>unsubscribe();
+  },[]);
 
-//   const logoutButton=async()=>{
-//     try{
-//         await signOut(auth);
-//         alert("Logout successfull");
-//         setCurrUser(null);
-//         }catch(err){
-//             alert(err);
-//         }
-//  }
+  const logoutButton=async()=>{
+    try{
+        await signOut(auth);
+        alert("Logout successfull");
+        setCurrUser(null);
+        }catch(err){
+            alert(err);
+        }
+ }
 
 
   const toggleMobileNav = () => {
@@ -77,6 +76,4 @@ const NavBar = () => {
 
   );
 }
-
-
 export default NavBar

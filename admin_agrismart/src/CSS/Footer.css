@@ -1,0 +1,39 @@
+.con_foot{
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+    background: #184109;
+}
+.con_footer{
+    color: #f9f5f5;
+    text-align: center;
+    padding: .1px;
+}
+.Icon-css{
+    justify-content: space-around;
+    display: flex;
+    color: #E8B042;
+    margin: 1em;
+}
+.Icon-css .footer-icons{
+    height: .7em;
+    width: .7em;
+}
+.footmenu-css{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0em;
+}
+.footlast-css{
+    width: 100%;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif ;
+    padding: 2px 0;
+    background-color: #E8B042;
+}
+
+@media screen and (max-width:769px){
+     .con_foot{
+        font-size: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+     }
+}
