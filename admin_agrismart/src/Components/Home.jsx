@@ -17,17 +17,17 @@ import Footer from './Footer';
 
 const Home = () => {
   const navigate = useNavigate();
-  const handleButtonClick_contact = () => {
+  // const handleButtonClick_contact = () => {
 
-    navigate("/contact");
-  };
+  //   navigate("/contact");
+  // };
   return (
     <div>
       <div className="home-top">
         <div>
           <h1>Need more food? Need more farmers?</h1>
           <h3>Want To Know Your Soil Status?</h3>
-          <button className="Home-Button" type="submit" onClick={handleButtonClick_contact}>Connect To know Your soil fertility</button>
+          {/* <button className="Home-Button" type="submit" onClick={handleButtonClick_contact}>Connect To know Your soil fertility</button> */}
         </div>
       </div>
       <div className="text">

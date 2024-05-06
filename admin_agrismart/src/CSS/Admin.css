@@ -1,14 +1,37 @@
-.headAdmin{
-    display: flex;
-    justify-content: center;
+.headAdmin {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.cropLists{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.cropLists {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 50%;
+    margin: 0 auto;
 }
 
-.cropItem{
+.cropItem {
     background-color: rgb(99, 182, 182);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Added border-radius */
 }
 
+.cropItem h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cropItem h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cropItem:last-child {
+    margin-bottom: 0;
+}
+
+.loginMessage {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}

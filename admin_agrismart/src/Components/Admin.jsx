@@ -39,7 +39,6 @@ const Admin = () => {
                         <h2>Proposed Price: Rs. {crop.proposedPrice}</h2>
                         <h2>Address : {crop.userAddress}</h2>
                         <h2>Phone : {crop.userPhoneNum}</h2>
-                        {/* <h3>Proposed by User ID: {crop.userId}</h3> */}
                     </div>
                 ))}
             </div></> :<><h2 style={{color:"red",textalign:"center"}}>Kindly Login to view this page</h2></>}
